@@ -16,6 +16,14 @@ The AI part of the system is public here: **[writehumanly-ai](https://github.com
 - **Fine-tuning:** QLoRA on Qwen3-4B-Base on a single 8 GB GPU cut the detector AI-score from 65.6% to 20.6% (11.1% with best-of-4 sampling).
 - **Cost:** found one vendor was 94-97% of serving cost and restructured the pipeline around a single verification call.
 
+## Machine learning projects (built with [Samin Tisar](https://github.com/samintisar))
+
+I worked on the ML pipelines and automation for these collaborative projects:
+
+- **[Disaster Tweet Classification](https://github.com/samintisar/disaster-tweet-classification):** hybrid NLP model combining DistilBERT embeddings with engineered features, over 84% F1-score.
+- **[Quant Portfolio Optimization](https://github.com/samintisar/quant-portfolio-system):** Mean-Variance, CVaR and Black-Litterman optimization with Random Forest and XGBoost signals, walk-forward backtesting and a FastAPI service.
+- **[Hospitality Revenue Dashboard](https://github.com/samintisar/Hospitality_Domain_Analysis_Dashboard):** Power BI and MySQL dashboard for RevPAR, ADR and occupancy.
+
 ## Tools I use
 
 TypeScript · Node.js · Python · Next.js · Convex · Stripe · REST APIs and webhooks · Vitest · PyTorch · Hugging Face (PEFT, TRL) · OpenAI, Gemini and open models · Claude Code daily
