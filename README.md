@@ -16,9 +16,24 @@ The AI part of the system is public here: **[writehumanly-ai](https://github.com
 - **Fine-tuning:** QLoRA on Qwen3-4B-Base on a single 8 GB GPU cut the detector AI-score from 65.6% to 20.6% (11.1% with best-of-4 sampling).
 - **Cost:** found one vendor was 94-97% of serving cost and restructured the pipeline around a single verification call.
 
+## AI agents
+
+**[Otto](https://github.com/marzukchowdhury/otto)** is an open-source browser agent. Give it a goal and it plans, opens a real browser, navigates, reads and fills forms, narrating every step.
+
+- LangGraph state machine (plan, observe, decide, act, replan) driving Playwright
+- Guardrails enforced in code: domain allowlists at the network layer, no typing into password or card fields, approval before submit, send or pay
+- Hard budgets on steps, tokens, dollars and time, with replayable trajectories and screenshots for every step
+- Eval suite of 7 deterministic tasks, including a prompt-injection trap, that tracks false-success rate; 39 offline tests
+
+**[Wisp](https://github.com/marzukchowdhury/wisp)** is a desktop AI companion and an experiment in a new kind of interface. It lives beside your cursor, sees the screen, talks, points at things and builds 3D explanations. Browser work is handed to Otto.
+
+- Electron overlay with a React Three Fiber 3D layer; the model writes a typed scene spec, never code
+- Named agent teammates with handoffs, Ghost Walkthroughs that replay any browser job as a tutorial, and an opt-in Memory Palace
+- Local-first voice (faster-whisper, Kokoro) with an optional fully local model mode; 22 offline backend tests with a scripted brain
+
 ## Tools I use
 
-TypeScript · Node.js · Python · Next.js · Convex · Stripe · REST APIs and webhooks · Vitest · PyTorch · Hugging Face (PEFT, TRL) · OpenAI, Gemini and open models · Claude Code daily
+TypeScript · Node.js · Python · Next.js · Playwright · LangGraph · Electron · Convex · Stripe · REST APIs and webhooks · Vitest · PyTorch · Hugging Face (PEFT, TRL) · OpenAI, Gemini and open models · Claude Code daily
 
 ## Get in touch
 
