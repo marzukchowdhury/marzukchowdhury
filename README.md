@@ -25,11 +25,12 @@ The AI part of the system is public here: **[writehumanly-ai](https://github.com
 - Hard budgets on steps, tokens, dollars and time, with replayable trajectories and screenshots for every step
 - Eval suite of 7 deterministic tasks, including a prompt-injection trap, that tracks false-success rate; 39 offline tests
 
-**[Wisp](https://github.com/marzukchowdhury/wisp)** is a desktop AI companion and an experiment in a new kind of interface. It lives beside your cursor, sees the screen, talks, points at things and builds 3D explanations. Browser work is handed to Otto.
+**[Pyxi](https://github.com/marzukchowdhury/Pyxi)** ([pyxi-site.vercel.app](https://pyxi-site.vercel.app)) is a little firefly on your desktop that sees your screen, talks with you, points at things, does the clicking when you let it, and explains in 3D. Browser work is handed to Otto.
 
 - Electron overlay with a React Three Fiber 3D layer; the model writes a typed scene spec, never code
-- Named agent teammates with handoffs, Ghost Walkthroughs that replay any browser job as a tutorial, and an opt-in Memory Palace
-- Local-first voice (faster-whisper, Kokoro) with an optional fully local model mode; 22 offline backend tests with a scripted brain
+- Drives your real mouse and keyboard only after you press Allow; bookings stop before payment and never pay
+- Named agent teammates with handoffs (Scout, Quill, Sketch), Ghost Walkthroughs that replay any browser job as a tutorial, and an opt-in Memory Palace
+- 105 offline backend tests and 20 renderer tests; one-click Windows installer with a free beta that needs no API key
 
 ## Tools I use
 
